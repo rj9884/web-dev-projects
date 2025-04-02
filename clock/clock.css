@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    background-image: url(clock.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.clock {
+    height: 300px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.clock span {
+    position: absolute;
+    transform: rotate(calc(30deg * var(--n)));
+    inset: 12px;
+    text-align: center;
+}
+
+.clock span b {
+    transform: rotate(calc(-30deg * var(--n)));
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.centre-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.handle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.handle i {
+    height: 90px;
+    width: 5px;
+    background-color: var(--clr);
+    border-radius: 1rem;
+    position: absolute;
+}
+.hour i{
+    height: 60px;
+    width: 5px;
+}
+.min i{
+    height: 80px;
+    width: 3px;
+}
+.sec i{
+    height: 90px;
+    width: 2px;
+}
+
+
+.digital-clock{
+    height: 90px;
+    width: 300px;
+    background-color: #212121;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.box{
+    height:80%;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 3rem;
+}
+.colon{
+    height:80%;
+    width: 50px;
+    text-align: center;
+    font-size: 3rem;
+}
